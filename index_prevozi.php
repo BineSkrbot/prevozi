@@ -24,9 +24,27 @@ $prijava = isset($_SESSION['idu']);
         <a href="prijava.php">PRIJAVA</a>
     <?php endif; ?>
 </div>
+<div><h1>PREVOZI VELENJE</h1>
+</div>
+<div id="uvod">
+    <h3>DOBRODOŠLI!</h3>
+    <p>
+    Dobrodošli na naši spletni strani.<br>
+    Nudimo najboljše prevoze<br>
+    za vse osebe,<br>
+    ob katerem koli dnevu<br> 
+    in<br>
+    ob kateri koli uri.<br>
+    </p>
 
-<div id="content">
-    <h1>Nročanje prevozov</h1>
+
+    <p>Naša ekipa poskrbi za varen,
+    udoben in zanesljiv prevoz do vašega cilja.
+    </p>
+</div>
+
+<div id="vsebina">
+    <h2>Naročanje prevozov</h2>
 
     <?php if($prijava): ?>
         <a href="narocanje.php">NAROČI PREVOZ</a>
@@ -34,6 +52,9 @@ $prijava = isset($_SESSION['idu']);
         <p>Za naročilo prevoza se moraš najprej prijaviti.</p>
     <?php endif; ?>
 </div>
-<?php require_once 'noga.php'; ?>
+<footer>
+        <p>&copy; 2026 Prevozi Velenje.</p>
+        <p>Kontakt: bine.skrbot@scv.si</p>
+    </footer>
 </body>
 </html>
